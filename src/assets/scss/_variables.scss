@@ -1,0 +1,21 @@
+$primary: #202020;
+$secondary: #121212;
+$white: #ededed;
+$red: #ed3024;
+$blue: #2a5fe7;
+$black: #000000;
+$grey: #828282;
+
+$z-index-sidebar: 100;
+$z-index-header: 100;
+$z-index-madal: 200;
+
+$sidebar-width: 300px;
+
+@mixin hover-btn($color) {
+  background-color: $color;
+  &:hover {
+    background-color: darken($color, 15%);
+    text-decoration: none;
+  }
+}

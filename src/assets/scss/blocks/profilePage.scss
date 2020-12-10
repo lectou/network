@@ -1,0 +1,30 @@
+.profile-page {
+  display: flex;
+
+  &__form {
+    flex-grow: 2;
+  }
+
+  &__avatar {
+    flex-grow: 1;
+    padding-left: 10rem;
+    img {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__file {
+    text-align: right;
+    color: $blue;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    cursor: pointer;
+    input {
+      display: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

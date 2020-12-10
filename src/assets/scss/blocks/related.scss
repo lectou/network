@@ -1,0 +1,35 @@
+.related {
+  border-bottom: 1px solid $black;
+  padding-bottom: 0.5rem;
+  .post__subtitle {
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    margin: 3rem 0 2rem;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    &-title {
+      font-size: 1.4rem;
+      color: #f3eba2;
+      margin-bottom: 0.5rem;
+      right: 500px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      a {
+        color: inherit;
+      }
+    }
+    &-item {
+      margin-bottom: 2.5rem;
+      width: 50%;
+    }
+    &-date {
+      color: #828282;
+      font-size: 1.2rem;
+    }
+  }
+}

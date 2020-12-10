@@ -1,0 +1,51 @@
+.comments {
+  margin-top: 3rem;
+  &__item {
+    margin-bottom: 3rem;
+    & > .comments {
+      margin-left: 3rem;
+    }
+  }
+
+  &__header {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+
+  &__avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+
+  &__autor {
+    flex-grow: 1;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  &__name {
+    color: $white;
+    font-weight: 500;
+  }
+
+  &__date {
+    color: #757575;
+    font-size: 1.2rem;
+  }
+
+  &__text {
+    color: $white;
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+  }
+
+  &__reply {
+    color: $blue;
+    font-family: inherit;
+    font-size: 1.2rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.btn {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #a9a9a9;
+  border-radius: 4em;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1.1rem 2.1rem;
+  color: $white;
+  transition: 0.3s;
+
+  &--red {
+    @include hover-btn($red);
+  }
+
+  &--blue {
+    @include hover-btn($blue);
+  }
+
+  &--rounded {
+    border-radius: 5px;
+  }
+
+  &--sm {
+    padding: 0.7em 1.25em;
+  }
+}
