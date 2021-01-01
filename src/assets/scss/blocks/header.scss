@@ -8,13 +8,29 @@
   width: 100%;
   display: flex;
 
+  @include breakpoint($large-size) {
+    max-width: 100%;
+  }
+
   &__nav {
     flex: 0 0 60%;
+    @include breakpoint($medium-size) {
+      flex: 0 0 50%;
+    }
+    @include breakpoint($medium-size) {
+      flex: 0 0 40%;
+    }
   }
 
   &__search {
     flex: 0 0 40%;
     display: flex;
     justify-content: flex-end;
+    @include breakpoint($medium-size) {
+      flex: 0 0 50%;
+    }
+    @include breakpoint($medium-size) {
+      flex: 0 0 60%;
+    }
   }
 }

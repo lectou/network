@@ -12,10 +12,9 @@ $z-index-madal: 200;
 
 $sidebar-width: 300px;
 
-@mixin hover-btn($color) {
-  background-color: $color;
-  &:hover {
-    background-color: darken($color, 15%);
-    text-decoration: none;
-  }
-}
+$tablet-size: 991px;
+$mobile-size: 768px;
+
+$large-size: 991px;
+$medium-size: 768px;
+$small-size: 576px;

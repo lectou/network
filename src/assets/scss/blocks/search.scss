@@ -3,6 +3,10 @@
   width: 100%;
   background-color: $primary;
 
+  @include breakpoint($tablet-size) {
+    max-width: 100%;
+  }
+
   &__input {
     border: none;
     background: transparent;

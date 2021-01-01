@@ -8,9 +8,22 @@
   background-color: $primary;
   box-shadow: 0 0 10px rgba($color: #050505, $alpha: 0.2);
 
+  @include breakpoint($large-size) {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    .show-sidebar {
+      transform: translateX(-100%);
+    }
+  }
+
   &__header {
-    height: 180px;
+    height: 18rem;
     background-color: $secondary;
+
+    @include breakpoint($large-size) {
+      height: 10rem;
+    }
+
     img {
       display: block;
       width: 100%;
@@ -28,5 +41,12 @@
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
+  }
+}
+
+.show-sidebar {
+  @include breakpoint($tablet-size) {
+    // transition: transform 0.3s ease-in-out;
+    transform: translateX(0%);
   }
 }

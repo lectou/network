@@ -4,6 +4,10 @@
     display: flex;
   }
 
+  @include breakpoint($tablet-size) {
+    display: none;
+  }
+
   &__item {
     position: relative;
     &:hover {

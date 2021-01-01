@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 @import './libs/normalize';
 
 html {
@@ -20,6 +21,7 @@ body {
 @import './blocks/page.scss';
 @import './blocks/header.scss';
 @import './blocks/nav.scss';
+@import './blocks/burger.scss';
 @import './blocks/search.scss';
 @import './blocks/sidebar.scss';
 @import './blocks/submenu.scss';
